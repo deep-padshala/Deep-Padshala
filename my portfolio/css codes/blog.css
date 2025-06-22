@@ -1,0 +1,138 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(40, 40, 40);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.h1 {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+}
+
+.p {
+  font-size: 50px;
+  color: whitesmoke;
+  text-align: center; 
+  color: #fff;
+  text-align: center;
+  animation: glow 100000000000000000000000000000s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 20px #fff, 0 0 30px rgb(71, 71, 71), 0 0 40px rgb(72, 72, 72), 0 0 50px rgb(71, 71, 71), 0 0 40px rgb(72, 72, 72), 0 0 70px rgb(71, 71, 71);
+  }
+
+}
+
+.center {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+}
+
+/* End Non-Essential  */
+
+.property-card {
+  height: 18em;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 2px #e1e1e3, -1px -1px 2px #ffffff;
+  box-shadow: 1px 1px 3px #e1e1e3, -1px -1px 27px #ffffff;
+}
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url('https://e0.pxfuel.com/wallpapers/926/674/desktop-wallpaper-dwarkadhish-kanha-dwarka-yadav-murlidhar-krishna-ahir-thumbnail.jpg');
+  background-size: cover;
+  background-repeat: no-rep
+  eat;
+}
+ 
+/* Bottom Card Section */
+
+.property-description {
+  background-color: #FAFAFC;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+  height: 18em;
+}
+
+.horizontal {
+
+  height: 0%;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin-top: 450px;
+  margin-left: 470px;
+  width: 510px;
+}
+
+.img img {
+  width: 700px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px 50px;
+  box-shadow: #e1e1e3;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.571);
+  transform: translateY(-5px);
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
